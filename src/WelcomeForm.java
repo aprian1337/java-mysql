@@ -7,16 +7,21 @@ import java.sql.ResultSet;
  * and open the template in the editor.
  */
 
+/**
+ *
+ * @author Sabrina
+ */
+
 public class WelcomeForm extends javax.swing.JFrame {
-    int total_cart=0;
-    int[] id_buku = new int[999];
+
     /**
      * Creates new form WelcomeForm
      */
     public WelcomeForm(ResultSet rs) {
         initComponents();
+        GenreForm genre = new GenreForm();
         txt_name.setText(rs.getString("nama"));
-        txt_cart.setText("Rp"+String.valueOf(total_cart));
+        txt_cart.setText("Rp"+String.valueOf(genre.getTotal_cart()));
 
     }
 

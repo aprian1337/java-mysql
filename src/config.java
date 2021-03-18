@@ -4,6 +4,11 @@
  * and open the template in the editor.
  */
 
+/**
+ *
+ * @author Sabrina
+ */
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;

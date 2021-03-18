@@ -3,6 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+/**
+ *
+ * @author Sabrina
+ */
 import java.awt.Component;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -13,10 +18,26 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 public class GenreForm extends javax.swing.JFrame {
+
+    /**
+     * @return the total_cart
+     */
+    public int getTotal_cart() {
+        return total_cart;
+    }
+
+    /**
+     * @param total_cart the total_cart to set
+     */
+    public void setTotal_cart(int total_cart) {
+        this.total_cart = total_cart;
+    }
     Connection con;
     Statement stat;
     ResultSet rs;
     String sql;
+    private int total_cart=0;
+    private String[] id_buku = new String[999];
     /**
      * Creates new form GenreForm
      */
@@ -245,4 +266,18 @@ public class GenreForm extends javax.swing.JFrame {
     private javax.swing.JButton btn_scifi;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
+
+    /**
+     * @return the id_buku
+     */
+    public String getId_buku(int id) {
+        return id_buku[id];
+    }
+
+    /**
+     * @param id_buku the id_buku to set
+     */
+    public void setId_buku(String id_buku, int idx) {
+        this.id_buku[idx] = id_buku;
+    }
 }

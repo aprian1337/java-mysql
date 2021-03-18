@@ -6,7 +6,7 @@
 
 /**
  *
- * @author aprian1337
+ * @author Sabrina
  */
 import java.awt.Component;
 import java.sql.Connection;
